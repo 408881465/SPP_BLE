@@ -498,7 +498,7 @@ public class MainActivity extends Activity {
             }
         }else {
             try{
-                msg = new String(dat, 0, len,"GBK");
+                msg = new String(dat, 0, len,"UTF-8");
             }catch	(UnsupportedEncodingException   e){
                 throw   new   RuntimeException("Unsupported   encoding   type.");
             }
@@ -534,7 +534,7 @@ public class MainActivity extends Activity {
             /**/
             if(((CheckBox) (findViewById(R.id.txhex))).isChecked()!=true){
                 try{
-                    byte[] stringBytes = message.getBytes("GBK");
+                    byte[] stringBytes = message.getBytes("UTF-8");
                     int dataSize = stringBytes.length + 1;
                     send = new byte[stringBytes.length + 6];
                     
