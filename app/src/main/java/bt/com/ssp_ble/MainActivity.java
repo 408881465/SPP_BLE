@@ -534,12 +534,25 @@ public class MainActivity extends Activity {
             /**/
             if(((CheckBox) (findViewById(R.id.txhex))).isChecked()!=true){
                 try{
-                    send = message.getBytes("GBK");
+                    byte[] stringBytes = message.getBytes("GBK");
+                    int dataSize = stringBytes.length + 1;
+                    send = new byte[stringBytes.length + 6];
+                    
+                    send[0] = (byte) 0xFB;
+                    send[1] = (byte) 0x1B;
+                    send[2] = (byte) 0x00;
+                    send[3] = (byte) (dataSize & 0xFF);
+                    send[4] = (byte) ((dataSize >> 8) & 0xFF);
+                    
+                    System.arraycopy(stringBytes, 0, send, 5, stringBytes.length);
+                    
+                    send[5 + stringBytes.length] = (byte) 0xFE;
                 }catch (UnsupportedEncodingException e) {
                     e.printStackTrace();
                 }
-            }else
-            send=getStringhex(message);
+            }else{
+                send=getStringhex(message);
+            }
             if(BLEON == false)
                 mChatService.write(send);
             else mBLE_Service.Write(send);
