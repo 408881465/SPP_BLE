@@ -512,8 +512,8 @@ public class DeviceListActivity extends Activity {
 		String[] uuid = new String[3];
 		SharedPreferences config = mcontext.getSharedPreferences("perference", MODE_PRIVATE);
 		uuid[0] = config.getString("useruuid0", "bb37a001-b922-4018-8e74-e14824b3a638");
-		uuid[1] = config.getString("useruuid1", "bb37a002-b922-4018-8e74-e14824b3a638");
-		uuid[2] = config.getString("useruuid2", "bb37a003-b922-4018-8e74-e14824b3a638");
+		uuid[1] = config.getString("useruuid1", "bb37a003-b922-4018-8e74-e14824b3a638");
+		uuid[2] = config.getString("useruuid2", "bb37a002-b922-4018-8e74-e14824b3a638");
 		return uuid;
 	}
 
@@ -521,8 +521,8 @@ public class DeviceListActivity extends Activity {
 		String[] uuid = new String[3];
 		SharedPreferences config = mcontext.getSharedPreferences("perference", MODE_PRIVATE);
 		uuid[0] = config.getString("Lastuuid0", "bb37a001-b922-4018-8e74-e14824b3a638");
-		uuid[1] = config.getString("Lastuuid1", "bb37a002-b922-4018-8e74-e14824b3a638");
-		uuid[2] = config.getString("Lastuuid2", "bb37a003-b922-4018-8e74-e14824b3a638");
+		uuid[1] = config.getString("Lastuuid1", "bb37a003-b922-4018-8e74-e14824b3a638");
+		uuid[2] = config.getString("Lastuuid2", "bb37a002-b922-4018-8e74-e14824b3a638");
 		return uuid;
 	}
 
@@ -563,8 +563,8 @@ public class DeviceListActivity extends Activity {
 	}
 
 	String bleUUID[] = {"bb37a001-b922-4018-8e74-e14824b3a638",
-			"bb37a002-b922-4018-8e74-e14824b3a638",
-			"bb37a003-b922-4018-8e74-e14824b3a638"};
+			"bb37a003-b922-4018-8e74-e14824b3a638",
+			"bb37a002-b922-4018-8e74-e14824b3a638"};
 
 	public void SetUUID(View v){
 		SetUUID();

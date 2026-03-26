@@ -29,8 +29,8 @@ public class SpBLE {
     private static Handler mHandler = null;
     // UUIDs for UAT service and associated characteristics.
     public static UUID UART_UUID = UUID.fromString("bb37a001-b922-4018-8e74-e14824b3a638");
-    public static UUID TX_UUID = UUID.fromString("bb37a003-b922-4018-8e74-e14824b3a638");
-    public static UUID RX_UUID = UUID.fromString("bb37a002-b922-4018-8e74-e14824b3a638");
+    public static UUID TX_UUID = UUID.fromString("bb37a002-b922-4018-8e74-e14824b3a638");
+    public static UUID RX_UUID = UUID.fromString("bb37a003-b922-4018-8e74-e14824b3a638");
     // UUID for the BTLE client characteristic which is necessary for notifications.
     public static UUID CLIENT_UUID = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb");
 

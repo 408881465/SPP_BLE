@@ -12,14 +12,14 @@ import android.widget.TextView;
 		    EditText Val[];
 		    View base=null;public int nowsel;
 		    String nomal[] = {"bb37a001-b922-4018-8e74-e14824b3a638",
-								"bb37a002-b922-4018-8e74-e14824b3a638",
-							"bb37a003-b922-4018-8e74-e14824b3a638"};
+								"bb37a003-b922-4018-8e74-e14824b3a638",
+							"bb37a002-b922-4018-8e74-e14824b3a638"};
 	String bt16[] = {"0000FFE0-0000-1000-8000-00805F9B34FB",
 			"0000FFE1-0000-1000-8000-00805F9B34FB",
 			"0000FFE2-0000-1000-8000-00805F9B34FB"};
 	String user[] = {"bb37a001-b922-4018-8e74-e14824b3a638",
-			"bb37a002-b922-4018-8e74-e14824b3a638",
-			"bb37a003-b922-4018-8e74-e14824b3a638"};
+			"bb37a003-b922-4018-8e74-e14824b3a638",
+			"bb37a002-b922-4018-8e74-e14824b3a638"};
 		    DialogWrapper2(View base) {
 		      this.base=base;rads = new RadioButton[3];Val = new EditText[3];
 				Val[0] = (EditText)base.findViewById(R.id.setserviceuuid);
